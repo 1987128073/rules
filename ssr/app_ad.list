@@ -1,0 +1,123 @@
+# bilibili
+DOMAIN,i0.hdslb.com
+
+# 掌上英雄联盟
+DOMAIN,pgdt.gtimg.cn
+DOMAIN,us.l.qq.com
+
+# huya
+DOMAIN-SUFFIX,fileserver.cdn.huya.com
+DOMAIN-SUFFIX,business.msstatic.com
+
+# douyu
+URL-REGEX,^https?:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo
+DOMAIN-SUFFIX,sta-op.douyucdn.cn
+DOMAIN-SUFFIX,diy-assets.msstatic.com
+DOMAIN-SUFFIX,livewebbs2.msstatic.com
+
+# 高德地图
+URL-REGEX,^http:\/\/ems\.youku\.com\/imp\?
+URL-REGEX,^http:\/\/optimus-ads\.amap\.com\/uploadimg\/.+
+
+# qq
+DOMAIN-SUFFIX,inews.gtimg.com
+DOMAIN-SUFFIX,asimg.easonad.com
+DOMAIN-SUFFIX,adsmind.gdtimg.com
+URL-REGEX,^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+p20\d\.1\.mp4\?
+URL-REGEX,^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/
+URL-REGEX,^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/
+URL-REGEX,^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/
+URL-REGEX,^https?:\/\/\w+\.gdt\.qq\.com
+URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport)
+URL-REGEX,^https?:\/\/news\.ssp\.qq\.com\/app
+URL-REGEX,^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info
+URL-REGEX,^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getBannerAds|getFullScreenPic|getNewsRemoteConfig|getQQNewsRemoteConfig|searchHotCatList|upLoadLoc)
+URL-REGEX,^https?:\/\/ssl\.kohsocialapp\.qq\.com:\d+\/game\/buttons
+URL-REGEX,^https?:\/\/vv\.video\.qq\.com\/getvmind\?
+URL-REGEX,^http:\/\/c\.gdt\.qq\.com\/gdt_clickwap\.fcg\?viewid
+URL-REGEX,^http:\/\/pgdt\.gtimg\.cn\/gdt\/0\/.+\.jpg
+URL-REGEX,^http:\/\/v\.gdt\.qq\.com\/gdt_stats\.fcg\?viewid
+URL-REGEX,^http:\/\/rpt\.gdt\.qq\.com\/creative_view\?viewid
+URL-REGEX,^http:\/\/pgdt\.gtimg\.cn\/gdt\/.+\.png
+URL-REGEX,^http:\/\/pgdt\.gtimg\.cn\/gdt\/.+\.jpg
+URL-REGEX,^http:\/\/pgdt\.gtimg\.cn\/.+\/snscosdownload\/SH\/reserved\/.+
+
+#腾讯视频
+URL-REGEX,^http:\/\/.+/\?tk=9901afb195dcf9a34db6088a4a221dba38b3d980e4db86009f8a08be4d4099ee323f6e7f03b881db21133b1bf2ae5bc5
+URL-REGEX,^http:\/\/video\.dispatch\.tc\.qq\.com\/.+\.mp4
+URL-REGEX,^http:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4
+URL-REGEX,^http:\/\/wa\.gtimg\.com\/adxcdn\/.+\.jpg
+
+#爱奇艺
+URL-REGEX,^http:\/\/.+\.iqiyipic\.com\/image\/.+\/ad\/.+\.jpg
+URL-REGEX,^http:\/\/static-s\.iqiyi\.com\/common\/.+\/Small_video\/a2\/af\/.+\.png
+URL-REGEX,^http:\/\/msga/.cupid/.iqiyi/.com\/scp2\.gif
+URL-REGEX,^https?:\/\/ssports\.iqiyi\.com/app\/
+URL-REGEX,^https?:\/\/ssports\.iqiyi\.com/json\/shop\/shopInfo
+URL-REGEX,^https?:\/\/.+\.iqiyi\.com\/videos\/other\/20$
+URL-REGEX,^https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000
+URL-REGEX,^https?:\/\/static\.iqiyi\.com\/js\/common\/.+\.js
+URL-REGEX,^https?:\/\/t7z\.cupid\.iqiyi\.com\/show
+URL-REGEX,^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo
+URL-REGEX,^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do
+URL-REGEX,^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show
+
+# JD
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$
+
+# 淘宝
+URL-REGEX,^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4})
+URL-REGEX,^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4})
+
+#百度贴吧
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog)
+URL-REGEX,^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog)
+URL-REGEX,^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/c\/s\/splashSchedule
+URL-REGEX,^https:\/\/pn\.baidu\.com\/iad\/.+\.json
+URL-REGEX,^https:\/\/feed-image\.baidu\.com\/0\/pic\/
+URL-REGEX,^http:\/\/.+\/c\/s\/(trackConfig|dashengVideo|splashSchedule)
+
+#百度网盘广告屏蔽(会员卖卡赚钱)
+URL-REGEX,^https:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info
+URL-REGEX,^https:\/\/pan\.baidu\.com\/rest\/.+\/pcs\/adx
+URL-REGEX,^https:\/\/pan\.baidu\.com\/api\/useractivity\/activity
+URL-REGEX,^http:\/\/pan\.baidu\.com\/act\/.+\/bchannel\/list
+URL-REGEX,^https:\/\/pan\.baidu\.com\/component\/view\/1510\?from
+URL-REGEX,^https:\/\/sofire\.baidu\.com\/ios\/.+
+URL-REGEX,^https:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js
+URL-REGEX,^https:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html
+URL-REGEX,^https:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info
+URL-REGEX,^https:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png
+URL-REGEX,^http:\/\/rp\.hpplay\.cn\/logouts
+URL-REGEX,^https:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/ts_ad\/
+URL-REGEX,^https:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adv\?
+URL-REGEX,^https:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?vip
+
+# 最爱壁纸
+DOMAIN,adsdk.9imobi.com
+DOMAIN,sdk.ssp.admobile.top
+DOMAIN,monitor.ssp.admobile.top
+
+# Pixiv
+DOMAIN,pixon.ads-pixiv.net
+DOMAIN,aax.amazon-adsystem.com
+DOMAIN,adchk.fivecdm.com
+DOMAIN,img1.360buyimg.com
+
+# Youtube
+DOMAIN,^https?:\/\/.+\.googlevideo\.com\/ptracking\?pltype=adhost
+DOMAIN,^https?:\/\/.+?\.googlevideo\.com/.*&(oad|ctier) 
+DOMAIN,^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_
+DOMAIN,^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ 
+DOMAIN,^https?:\/\/.+\.youtube\.com\/get_midroll_
+DOMAIN,^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite
+DOMAIN,^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads
+DOMAIN,^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat
+DOMAIN,^https?:\/\/.+\.youtube\.com\/pagead\/
+DOMAIN,^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking)
+DOMAIN,(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+)
+DOMAIN,^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad
+DOMAIN,^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break
+DOMAIN,^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext
