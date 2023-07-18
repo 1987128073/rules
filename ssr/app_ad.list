@@ -19,6 +19,9 @@ DOMAIN-SUFFIX,livewebbs2.msstatic.com
 URL-REGEX,^http:\/\/ems\.youku\.com\/imp\?
 URL-REGEX,^http:\/\/optimus-ads\.amap\.com\/uploadimg\/.+
 
+# 微信
+URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad
+
 # qq
 DOMAIN-SUFFIX,inews.gtimg.com
 DOMAIN-SUFFIX,asimg.easonad.com
