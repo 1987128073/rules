@@ -16,13 +16,14 @@ if (method === "GET") {
 	if (url.includes(domain + "/paly")) {
 		body = body.replace('class="player-rm rm-two rm-list"', 'style="visibility:hidden;"');
 		body = body.replace('id="rm-float"', 'style="visibility:hidden;"');
+		body = body.replace('at.umtrack.com', '');
 	}
 	if (url.includes(domain + "/show")) {
 		body = body.replace('class="module-domain-prompt"', 'style="visibility:hidden;"');
 		body = body.replace('class="player-rm rm-two rm-list"', 'style="visibility:hidden;"');
 	}
-
 }
+
 $done({
     body
 });
