@@ -1,3 +1,54 @@
+# 其他app
+DOMAIN-SUFFIX,v3-be-pack.pglstatp-toutiao.com
+DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao-b.com
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,p26-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-SUFFIX,sf3-fe-tos.pglstatp-toutiao.com
+DOMAIN-SUFFIX,lf1-cdn-tos.bytegoofy.com
+DOMAIN-SUFFIX,ether-pack.pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,p9-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-SUFFIX,v6-be-pack-nxyd.pglstatp-toutiao.com
+DOMAIN-SUFFIX,p3-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-SUFFIX,m.ctrip.com
+DOMAIN-SUFFIX,p6-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
+DOMAIN-SUFFIX,sdk.hzsanjiaomao.com
+DOMAIN-SUFFIX,mi.gdt.qq.com
+DOMAIN-SUFFIX,ic.aphemicstull.com
+DOMAIN-SUFFIX,zap.buzz
+DOMAIN-SUFFIX,a.vdo.ai
+DOMAIN-SUFFIX,easygoingasperitydisconnect.com
+DOMAIN-SUFFIX,ka.trapfulgide.com
+DOMAIN-SUFFIX,s0.2mdn.ne
+DOMAIN-SUFFIX,h5.vdo.ai
+DOMAIN-SUFFIX,ad.doubleclick.net
+DOMAIN-SUFFIX,measure.analysis.fi
+DOMAIN-SUFFIX,ecdn.analysis.fi
+DOMAIN-SUFFIX,itineraryupper.com
+DOMAIN-SUFFIX,cdn.runative-syndicate.com
+DOMAIN-SUFFIX,hhklc.com
+DOMAIN-SUFFIX,unhatedprotei.com
+DOMAIN-SUFFIX,ib.adnxs.com
+DOMAIN-SUFFIX,prhzxq.com
+DOMAIN-SUFFIX,adsco.re
+DOMAIN-SUFFIX,pagead2.googlesyndication.com
+URL-REGEX,godpvqnszo.com^
+DOMAIN-SUFFIX,1638lp.eqwyym.com
+DOMAIN-SUFFIX,dsvfvxc.dsvfvxc.com
+DOMAIN-SUFFIX,asset.3400.org
+DOMAIN-SUFFIX,img.12580.org
+DOMAIN-SUFFIX,d.dhkipdsc.xyz
+DOMAIN-SUFFIX,pv.dakawm.cc
+DOMAIN-SUFFIX,url.3400.org
+DOMAIN-SUFFIX,syndication.realsrv.com
+DOMAIN-SUFFIX,s3t3d2y8.afcdn.net
+DOMAIN-SUFFIX,u3y8v8u4.aucdn.net
+
+# 顺丰
+DOMAIN-SUFFIX,mcs-mimp-web.sf-express.com
+URL-REGEX,^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern
+URL-REGEX,pgdt\.ugdtimg\.com\/141/20204\/snscosdownload\/SZ\/reserved
+
 # bilibili
 DOMAIN,i0.hdslb.com
 
