@@ -1,3 +1,5 @@
+# 部分引用自 https://github.com/fmz200/wool_scripts
+
 # 其他app
 DOMAIN-SUFFIX,v3-be-pack.pglstatp-toutiao.com
 DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao-b.com
@@ -44,17 +46,230 @@ DOMAIN-SUFFIX,syndication.realsrv.com
 DOMAIN-SUFFIX,s3t3d2y8.afcdn.net
 DOMAIN-SUFFIX,u3y8v8u4.aucdn.net
 
+# 斗鱼直播
+URL-REGEX,^https?:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd
+URL-REGEX,^https?:\/\/staticlive.douyucdn.cn\/.+\/getStartSend
+URL-REGEX,^https?:\/\/staticlive.douyucdn.cn\/upload\/signs\/
+URL-REGEX,^https?:\/\/douyucdn.cn\/.+\/appapi\/getinfo
+URL-REGEX,^https?:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo
+URL-REGEX,^https?:\/\/capi.douyucdn.cn\/lapi\/sign\/app(api)?\/getinfo\?client_sys=ios
+URL-REGEX,^https?:\/\/capi\.douyucdn\.cn\/api\/ios_app\/check_update
+URL-REGEX,^https?:\/\/capi\.douyucdn\.cn\/api\/v1\/getStartSend?client_sys=ios
+URL-REGEX,^https?:\/\/douyucdn\.cn\/.+?\/appapi\/getinfo
+URL-REGEX,^https?:\/\/staticlive\.douyucdn\.cn\/.+?\/getStartSend
+URL-REGEX,^https?:\/\/staticlive\.douyucdn\.cn\/upload\/signs\/
+
+# 饿了么
+URL-REGEX,^https?:\/\/elemecdn.com\/.+\/sitemap
+URL-REGEX,^https?:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4}
+URL-REGEX,^https?:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4}
+URL-REGEX,^https?:\/\/fuss10\.elemecdn\.com\/.+?\.mp4
+URL-REGEX,^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_1\d{3},h_2\d{3}\/format,webp\/
+URL-REGEX,^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_6\d{2},h_8\d{2}\/format,webp\/
+URL-REGEX,^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{3},h_\d{4}\/format,webp\/
+URL-REGEX,^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\?
+URL-REGEX,^https?:\/\/www1\.elecfans\.com\/www\/delivery\/
+URL-REGEX,^https:\/\/(nr-op|cube)\.elemecdn\.com\/.+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{4,},h_\d{4,}\/($|format,webp\/$)
+
+# 丰巢
+URL-REGEX,^https?:\/\/consumer\.fcbox\.com\/v\d\/ad\/
+
+# 高德地图
+URL-REGEX,^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/app\/startup\/init\?
+URL-REGEX,^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/
+URL-REGEX,^https?:\/\/m5\.amap\.com\/ws\/valueadded\/
+URL-REGEX,^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/
+
+# 谷歌
+URL-REGEX,^https?:\/\/.+\.googleapis.com/.+ad_break
+URL-REGEX,^https?:\/\/.+\.googleapis.com/.+log_event
+URL-REGEX,^https?:\/\/.+\.googleapis.com/adsmeasurement
+URL-REGEX,^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/
+
+# 盒马
+URL-REGEX,^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.wdk\.render\.querysinglepage\/3\.0
+
+# 京东
+URL-REGEX,^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/202220\/24\/21575\/134711\/625b821bE5d642d73\/77636692989bd2be\.jpg
+URL-REGEX,^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\/t1\/96405\/17\/28473\/168578\/625cd144E7997a990\/8233ce8a10c4e463\.jpg
+URL-REGEX,^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\/t1\/182114\/23\/23904\/121433\/62593c9cEd77c4519\/2e3f4c518b771094\.jpg
+URL-REGEX,^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\/t1\/202971\/34\/26906\/282671\/6319c862E1818d3fa\/0597464cf6bc8e2f\.jpg
+URL-REGEX,^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\/t1\/143222\/27\/29233\/141967\/631b1f8cE3a112e54\/d3fe0b2f9f0a9f30\.jpg
+URL-REGEX,^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs
+URL-REGEX,^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/197429\/22/22400\/119193\/62562ef0Eff59b4d4
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject-array
+URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/(aladdin\/na\/m\/getLoadingPicture|aladdin\/na\/m\/getLoadingPicture)
+URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture
+URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/(new)?na\/m\/adInfo
+URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo
+URL-REGEX,^https?:\/\/bdsp-x\.jd\.com\/adx\/
+URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts)
+URL-REGEX,^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$
+URL-REGEX,^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/
+URL-REGEX,^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/197429\/22\/22400\/119193\/62562ef0Eff59b4d4
+URL-REGEX,^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/220846\/5\/16214\/41327
+URL-REGEX,^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/202818
+URL-REGEX,^https?:\/\/storage\.360buyimg\.com\/kepler-app
+URL-REGEX,^https?:\/\/m\.360buyimg\.com\/mobilecms\/s640x1136_jfs\/
+
+# > 京喜
+URL-REGEX,^https:\/\/img14.360buyimg.com\/mcoss\/jfs\/t1\/183719\/8\/13358\/190450\/60e82bedE10b64e23\/
+
+# 京东金融
+URL-REGEX,^https:\/\/m.360buyimg.com\/mobilecms\/s1125x2436_jfs\/
+URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start
+URL-REGEX,^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/
+URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture
+URL-REGEX,^https?:\/\/appconf\.mail\.163\.com\/mmad\/
+URL-REGEX,^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json
+
+# 美团
+URL-REGEX,^https?:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$
+URL-REGEX,^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+?\.jpg url reject-200
+URL-REGEX,^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+?\.jpg\?may_covertWebp
+URL-REGEX,^https?:\/\/s3plus\.meituan\.net\/.+?\/linglong\/
+URL-REGEX,^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002
+URL-REGEX,^https?:\/\/www\.meituan\.com\/api\/v\d\/appstatus\?
+URL-REGEX,^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo\?
+URL-REGEX,^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture
+URL-REGEX,^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4)
+URL-REGEX,^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4)
+URL-REGEX,^https?:\/\/apimobile\.meituan\.com\/appupdate\/mach\/checkUpdate? url reject
+URL-REGEX,^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$
+URL-REGEX,^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp
+URL-REGEX,^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|mmc|wmbanner)\/
+
+# Weico(微博客户端)
+URL-REGEX,^https?:\/\/overseas.weico.cc\/portal.php\?a=get_coopen_ads
+
+# 网易云音乐
+URL-REGEX,^https?:\/\/.+?\/eapi\/(?>ad|log)\/
+URL-REGEX,^https?:\/\/interface(\d)?.music.163.com\/eapi\/ad\/
+URL-REGEX,^https?:\/\/iadmusicmat\.music\.126\.net\/.+\.jpg
+URL-REGEX,^http:\/\/interface\.music\.163\.com\/eapi\/ad\/config\/get
+URL-REGEX,^https?:\//m\.ads\.8le8le\.com\/adShow
+
+# 网易有道词典
+URL-REGEX,^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab
+URL-REGEX,^https:\/\/dict\.youdao\.com\/homepage\/tile
+URL-REGEX,^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig
+URL-REGEX,^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup
+URL-REGEX,^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo
+URL-REGEX,^https:\/\/dict\.youdao\.com\/dictusertask\/system
+URL-REGEX,^https:\/\/dictvip-business\.youdao\.com\/home\/ad
+
+# 威锋
+URL-REGEX,^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList)
+
+# 小米
+URL-REGEX,^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start 
+URL-REGEX,^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/
+URL-REGEX,^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen
+URL-REGEX,^https?:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\?
+URL-REGEX,^https?:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/banner
+URL-REGEX,^https?:\/\/(api-mifit|api-mifit-\w+)\.huami\.com\/discovery\/mi\/discovery\/\w+_ad\?
+URL-REGEX,^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\?
+URL-REGEX,^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\?
+URL-REGEX,^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\?
+URL-REGEX,^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\?
+URL-REGEX,^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\?
+URL-REGEX,^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\?
+
+# 米家
+URL-REGEX,^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab)\?
+
+# 迅雷
+URL-REGEX,^https?:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/
+URL-REGEX,^https?:\/\/api-shoulei-ssl\.xunlei\.com\/flowhub\/v\d\/slots:batchGet
+
+# 向日葵
+URL-REGEX,^https?:\/\/client-api\.oray\.com\/materials\/SLCC_IOS_STARTUP\?lang=zh-Hans-CN
+
+# 心悦俱乐部
+URL-REGEX,^https?:\/\/bgw\.xinyue\.qq\.com\/xyapi\.PageService\/GetIndexPopFlash
+
+# 携程
+URL-REGEX,^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/[0-9]{5}\/json\/getTimeZoneServerIpList\?__gw_os=IOS
+URL-REGEX,^https:\/\/ma-adx\.ctrip\.com\/_ma\.gif
+URL-REGEX,^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/json\/tripAds
+URL-REGEX,^https:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare
+
+# 闲鱼
+URL-REGEX,^https?:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$
+URL-REGEX,^https?:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4}
+URL-REGEX,^https?:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$
+URL-REGEX,^https?:\/\/asp\.cntv\.myalicdn\.com\/.+?\?maxbr=850
+URL-REGEX,^https?:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_\.\w{3,4}$
+URL-REGEX,^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/[\w\/.-]+\.jpg_(9\d{2}|\d{4})
+URL-REGEX,^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.jpg_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q\d0\.jpg_\.(heic|webp)$
+URL-REGEX,^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4})
+URL-REGEX,^https:\/\/gw.alicdn.com\/mt\/
+URL-REGEX,^https:\/\/gw.alicdn.com\/tfs\/.+\d{3,4}-\d{4}
+
+# 永辉
+URL-REGEX,^https?:\/\/api\.yonghuivip\.com\/web\/shensuan\/ad\/getAd
+
+# 有道词典
+URL-REGEX,^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish
+URL-REGEX,^https?:\/\/oimage\w\d\.ydstatic\.com\/image\?.+?=adpublish
+URL-REGEX,^https?:\/\/dsp-impr2\.youdao\.com\/adload
+URL-REGEX,^https?:\/\/impservice\.dictapp\.youdao\.com\/imp\/request
+URL-REGEX,^https?:\/\/oral\.youdao\.com\/oral\/adInfo
+
+# 招商银行
+URL-REGEX,^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig
+URL-REGEX,^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic
+
+# 掌上生活
+URL-REGEX,^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/AdPlatformPublic\/.*.(jpeg|jpg|png)
+
+# 中国联通
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd url reject-200
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv)
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/getclientconfig\.htm
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd)
+URL-REGEX,^https?:\/\/[^(apple|10010)]+\.(com|cn)\/(a|A)d(s|v)?(\/|\.js)
+URL-REGEX,^https?:\/\/m1\.ad\.10010\.com\/noticeMag\/images\/imageUpload\/2\d{3}
+URL-REGEX,^https?:\/\/res\.mall\.10010\.cn\/mall\/common\/js\/fa\.js?referer=
+
+# 中国电信
+URL-REGEX,^https?:\/\/cloud\.189\.cn\/include\/splash\/
+URL-REGEX,^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation
+
+# 中国移动
+URL-REGEX,^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit
+URL-REGEX,^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList
+URL-REGEX,^https:\/\/(client\.app\.coc|h\.app\.coc|app)\.10086\.cn\/biz-orange\/DN\/emotionMarket
+URL-REGEX,^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v1\/market_content\.page\.queryHasIt
+URL-REGEX,^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query
+URL-REGEX,^https?:\/\/gx\.10086\.cn\/zt-portal\/gxhzg\/portal\/app\/api\/v
+URL-REGEX,^https?:\/\/api\.ahmobile\.cn:443\/eip\?eip_serv_id=app\.getAllNew
+URL-REGEX,^https?:\/\/gd\.10086\.cn\/gmccapp\/serv\/\?servicename=GMCCAPP_704_002_001_001
+
+# 掌上道具城
+URL-REGEX,^https:\/\/djcapp\.game\.qq\.com\/daoju\/igw\/main\/\?_service=welink\.ad\.list&_ret_key=result&site_set
+
 # 顺丰
 DOMAIN-SUFFIX,mcs-mimp-web.sf-express.com
 URL-REGEX,^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern
 URL-REGEX,pgdt\.ugdtimg\.com\/141/20204\/snscosdownload\/SZ\/reserved
+URL-REGEX,^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/appVersion\/detectionUpgrade
+URL-REGEX,^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/
+URL-REGEX,^https?:\/\/shopic\.sf-express\.com\/crm\/mobile\/common\/flashscreen
+URL-REGEX,https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryAdImages
 
 # bilibili
 DOMAIN,i0.hdslb.com
+# IP请求,地理位置请求
+URL-REGEX,^https:\/\/app\.bilibili\.com\/x\/resource\/ip
+URL-REGEX,^https:\/\/api\.bilibili\.com\/x\/web-interface\/zone\?jsonp=jsonp$
 
 # 掌上英雄联盟
 DOMAIN,pgdt.gtimg.cn
 DOMAIN,us.l.qq.com
+URL-REGEX,^https?:\/\/ossweb-img\.qq\.com\/upload\/adw\/image\/[0-9]{3}\/202[0-9]{5}\/[a-z0-9]{32}\.(jpg|jpeg)
+URL-REGEX,^https?:\/\/mlol\.qt\.qq\.com\/go\/recommend
 
 # huya
 DOMAIN-SUFFIX,fileserver.cdn.huya.com
@@ -132,6 +347,9 @@ URL-REGEX,^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d
 URL-REGEX,^https:\/\/pn\.baidu\.com\/iad\/.+\.json
 URL-REGEX,^https:\/\/feed-image\.baidu\.com\/0\/pic\/
 URL-REGEX,^http:\/\/.+\/c\/s\/(trackConfig|dashengVideo|splashSchedule)
+URL-REGEX,^https?:\/\/gw\.alicdn\.com\/imgextra\/i\d\/.+1125-1602\.jpg
+URL-REGEX,^https:\/\/heic\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.jpg_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0\.jpg_\.heic$
+URL-REGEX,^https:\/\/(heic|gw)\.alicdn\.com\/imgextra\/i\d\/.+-tps-(702-758|1125-1602)\.(heic|jpg|png) 
 
 #百度网盘广告屏蔽(会员卖卡赚钱)
 URL-REGEX,^https:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info
@@ -175,3 +393,4 @@ DOMAIN,(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+
 DOMAIN,^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad
 DOMAIN,^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break
 DOMAIN,^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext
+
