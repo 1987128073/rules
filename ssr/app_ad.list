@@ -46,6 +46,11 @@ DOMAIN-SUFFIX,syndication.realsrv.com
 DOMAIN-SUFFIX,s3t3d2y8.afcdn.net
 DOMAIN-SUFFIX,u3y8v8u4.aucdn.net
 
+#禁漫
+URL-REGEX,^https?:\/\/www\.jmapinode\d\.cc\/ad_template\?group=app_route\&v=undefined\&device=ios
+URL-REGEX,^https?:\/\/cdn-msp\.jmapiproxy\d\.cc/static\/resources\/images\/.+\.gif
+URL-REGEX,^https?:\/\/cdn-msp\.jmapiproxy\d\.cc/static\/resources\/images\/APP\/\d+\.gif
+
 # 斗鱼直播
 URL-REGEX,^https?:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd
 URL-REGEX,^https?:\/\/staticlive.douyucdn.cn\/.+\/getStartSend
